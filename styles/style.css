@@ -235,7 +235,7 @@ body {
   gap: 10px;
 }
 
-/*Footer styles*/
+/*Footer*/
 .footer {
   position: relative;
   height: 100vh;
@@ -262,7 +262,10 @@ body {
 
   .header__title {
     margin-inline-start: -20px;
-    font-size: var(--dskt-font-size, clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem));
+    font-size: var(
+      --dskt-font-size,
+      clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
+    );
   }
 
   .content__paragraph {
@@ -320,7 +323,7 @@ body {
   .content_block-three {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 10px;
+    gap: 20px;
   }
 
   .gallery_heading {
@@ -389,6 +392,10 @@ body {
 
   .content_block-one {
     display: grid;
+    gap: 10px;
+  }
+
+  .content_block-three {
     gap: 10px;
   }
 
