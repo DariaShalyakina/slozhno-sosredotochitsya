@@ -9,3 +9,11 @@
   --border-color: #ff0070;
   --border-button: rgba(255, 0, 112, 0.4);
 }
+
+.theme_dark .decoration__text::before {
+  display: block;
+}
+
+.theme_dark .decoration__point::after {
+  display: block;
+}

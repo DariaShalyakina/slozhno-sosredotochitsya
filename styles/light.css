@@ -22,19 +22,12 @@
     --border-color: #353430;
     --border-button: rgba(50, 49, 45, 0.4);
   }
-  .decoration__text::before {
-    display: none;
-  }
 
   .decoration__point::after {
     display: none;
   }
-}
-
-.theme_light .decoration__text::before {
-  display: none;
-}
-
-.theme_light .decoration__point::after {
-  display: none;
+  
+  .decoration__text::before {
+    display: none;
+  }
 }
