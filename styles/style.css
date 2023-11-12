@@ -160,14 +160,6 @@
   margin-block-end: 40px;
 }
 
-.content__text-block {
-  margin-bottom: 20px;
-}
-
-.block:last-child .content__text-block {
-  margin-bottom: 0;
-}
-
 .section_title {
   color: var(--color-section-title, #ff0070);
   font-size: var(--main-font-size, 18px);
@@ -206,6 +198,11 @@
   font-size: var(--main-font-size, 18px);
   font-weight: var(--main-font-weight, 400);
   line-height: var(--main-line-height, 130%);
+  margin-bottom: 20px;
+}
+
+.block:last-child .content__text-block {
+  margin-bottom: 0;
 }
 
 .link {
