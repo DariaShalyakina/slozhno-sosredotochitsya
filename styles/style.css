@@ -147,12 +147,13 @@
 .content_block-what,
 .content_block-how {
   margin-block-end: 50px;
+
 }
 
 .content_block {
-  min-width: 355px;
   display: flex;
   flex-wrap: wrap;
+  min-width: 355px;
   padding: 0 10px;
   font-family: var(--main-font, sans-serif);
   line-height: var(--main-line-height, 130%);
@@ -241,6 +242,11 @@
   gap: 10px;
 }
 
+.image-gallery {
+  max-width: 100%; /* Максимальная ширина для изображений */
+  height: auto;
+}
+
 /*Footer*/
 .footer {
   position: relative;
@@ -287,8 +293,8 @@
   }
 
   .decoration__point::after {
-    top: 30px;
-    right: 30px;
+    top: 28px;
+    right: 28px;
   }
 
   .decoration__border::before {
@@ -302,6 +308,7 @@
   }
 
   .content_block {
+    grid-template-columns: repeat(auto-fit, minmax(728px, 1fr));
     padding: 0 20px;
     margin-block-end: 60px;
   }
@@ -323,8 +330,6 @@
     margin-block-start: 0;
     padding-block-end: 0;
   }
-
-
 
   .section_title-what {
     max-width: 236px;
