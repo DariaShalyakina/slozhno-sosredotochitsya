@@ -147,7 +147,6 @@
 .content_block-what,
 .content_block-how {
   margin-block-end: 50px;
-
 }
 
 .content_block {
@@ -198,11 +197,15 @@
   font-size: var(--main-font-size, 18px);
   font-weight: var(--main-font-weight, 400);
   line-height: var(--main-line-height, 130%);
-  margin-bottom: 20px;
 }
 
-.block:last-child .content__text-block {
-  margin-bottom: 0;
+.block_why li:not(:last-child),
+.block_why p:not(:last-child),
+.block_what li:not(:last-child),
+.block_what p:not(:last-child),
+.block_how li:not(:last-child),
+.block_how p:not(:last-child) {
+  margin-block-end: 20px;
 }
 
 .link {
@@ -272,10 +275,7 @@
 
   .header__title {
     margin-inline-start: -20px;
-    font-size: var(
-      --dskt-font-size,
-      clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
-    );
+    font-size: var(--dskt-font-size, clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem));
   }
 
   .content__paragraph {
@@ -358,31 +358,27 @@
   .image-gallery {
     inline-size: 100%;
     block-size: 100%;
+    object-fit: cover;
   }
 
   .sunset {
     grid-area: sunset;
-    object-fit: cover;
   }
 
   .icecream {
     grid-area: icecream;
-    object-fit: cover;
   }
 
   .tape {
     grid-area: tape;
-    object-fit: cover;
   }
 
   .books {
     grid-area: books;
-    object-fit: cover;
   }
 
   .street {
     grid-area: street;
-    object-fit: cover;
   }
 
   .footer {
@@ -395,7 +391,6 @@
 }
 
 @media (width >= 1024px) {
-
   .header__theme-menu {
     justify-self: center;
     align-self: start;
@@ -410,12 +405,17 @@
     grid-template-columns: 315px 1fr;
   }
 
-  .block_two {
+  .block_what {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-  
+
+  .block_what li:nth-child(1),
+  .block_what li:nth-child(2) {
+    margin-block-end: 0;
+  }
+
   .section_title-what {
     max-width: 315px;
   }
